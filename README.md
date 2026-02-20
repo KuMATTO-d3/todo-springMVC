@@ -63,7 +63,7 @@ com.example.todo
 ├── service
 ├── repository
 ├── domain
-└─dto 
+└── dto 
 ```
 
 ---
