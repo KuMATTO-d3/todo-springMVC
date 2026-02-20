@@ -57,12 +57,14 @@ DTOは外部とのデータ契約を表すモデルとして独立パッケー�
 
 ## Package Structure
 
+```text
 com.example.todo
 ├── controller
 ├── service
 ├── repository
 ├── domain
-└── dto
+└── 
+```
 
 ---
 
