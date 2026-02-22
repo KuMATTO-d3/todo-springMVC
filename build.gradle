@@ -28,8 +28,12 @@ dependencies {
 	// Web (Controller用)
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 
-	// Thymeleaf
+	// Thymeleaf(テンプレートエンジン)
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+	// Bootstrap（webjarsを利用、locator-coreでVer.情報を省略）
+	implementation group: 'org.webjars', name: 'bootstrap', version: '5.2.3'
+	implementation group: 'org.webjars', name: 'webjars-locator-core', version: '0.52'
 
 	// JPA
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
