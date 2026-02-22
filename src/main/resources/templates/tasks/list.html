@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <title>タスク一覧</title>
+    <link rel='stylesheet' href='/webjars/bootstrap/css/bootstrap.min.css'>
+</head>
+<body>
+<link rel='stylesheet' href='/webjars/bootstrap/js/bootstrap.min.js'>
+<div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>概要</th>
+            <th>ステータス</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="task: ${tasks}" th:object="${task}">
+            <td><a th:text="'#' + *{id}"></a></td>
+            <td><a th:text="'#' + *{summary}"></a></td>
+            <td th:text="*{status}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
